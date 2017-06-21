@@ -24,8 +24,14 @@ function playSound(genre) {
     }
   }, function(tracks) {
     var random = Math.floor(Math.random() * 49);
-    SC.oEmbed(tracks[random].uri, { auto-play: true }, document.getElementById('')
+    SC.oEmbed(tracks[random].uri, { auto-play: true }, document.getElementById('test'));
+  });
+}
 
-    })
-  }
-)}
+window.onload = function() {
+  SC.initialize({
+    client_id: '8538a1744a7fdaa59981232897501e04'
+  });
+
+  
+};
