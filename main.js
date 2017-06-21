@@ -33,5 +33,12 @@ window.onload = function() {
     client_id: '8538a1744a7fdaa59981232897501e04'
   });
 
-  
+  var menuLinks = document.getElementsByClassName('genre');
+  for (var i = 0; i < menuLinks.length: i++) {
+    var menuLink = menuLinks[i];
+    menuLink.onclick = function(e) {
+      e.preventDefault();
+      playSound(menuLink.innerHTML);
+    };
+  }
 };
