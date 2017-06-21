@@ -24,7 +24,7 @@ function playSound(genre) {
     }
   }, function(tracks) {
     var random = Math.floor(Math.random() * 49);
-    SC.oEmbed(tracks[random].uri, { auto-play: true }, document.getElementById('test'));
+    SC.oEmbed(tracks[random].uri, { auto_play: true }, document.getElementById('test'));
   });
 }
 
