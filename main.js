@@ -15,3 +15,17 @@
 
 
 // 5. Create a way to listen for a click that will play the song in the audio play
+
+function playSound(genre) {
+  SC.get('/tracks', {
+    genres: genre,
+    bpm: {
+      from: 100
+    }
+  }, function(tracks) {
+    var random = Math.floor(Math.random() * 49);
+    SC.oEmbed(tracks[random].uri, { auto-play: true }, document.getElementById('')
+
+    })
+  }
+)}
