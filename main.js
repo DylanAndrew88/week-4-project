@@ -16,29 +16,14 @@
 
 // 5. Create a way to listen for a click that will play the song in the audio play
 
-function playSound(genre) {
-  SC.get('/tracks', {
-    genres: genre,
-    bpm: {
-      from: 100
-    }
-  }, function(tracks) {
-    var random = Math.floor(Math.random() * 49);
-    SC.oEmbed(tracks[random].uri, { auto_play: true }, document.getElementById('test'));
-  });
-}
-
-window.onload = function() {
-  SC.initialize({
-    client_id: '8538a1744a7fdaa59981232897501e04'
-  });
-
-  var menuLinks = document.getElementsByClassName('genre');
-  for (var i = 0; i < menuLinks.length: i++) {
-    var menuLink = menuLinks[i];
-    menuLink.onclick = function(e) {
-      e.preventDefault();
-      playSound(menuLink.innerHTML);
-    };
-  }
-};
+function searchTracks() {
+  let string = searchBar.value;
+  fetch('https://api.soundcloud.com/tracks/?client_id=095fe1dcd09eb3d0e1d3d89c76f5618f&q=' + string)
+  .then(
+    function(response) {
+      if(response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' + response.status);
+        return
+      }
+      response.json().then(function(data) {
+      }})}
