@@ -26,4 +26,15 @@ function searchTracks() {
         return
       }
       response.json().then(function(data) {
+        let markup = `
+
+
+          <div id="test">
+           <img src="${data.results[i].picture.large}">
+           <p>${}
+          </div>
+
+`
+        document.body.innerHTML += markup;
+      }
       }})}
