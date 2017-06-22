@@ -16,10 +16,10 @@
 
 // 5. Create a way to listen for a click that will play the song in the audio play
 
-let container = document.getElementById('test');
+let container = document.getElementById('user-input');
 
 function searchTracks() {
-  let string = "asdf";
+  let string = "Dangerous";
   fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=' + string)
   .then(
     function(response) {
@@ -32,7 +32,7 @@ function searchTracks() {
         let markup = `
 
 
-          <div id="test">
+          <div id="user-input">
            <p>${data[0].title}</p>
           </div>
 
