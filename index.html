@@ -5,6 +5,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <p id="welcome"></p>
+  <form>
+  <input id="name" type="text">
+  </form>
+  <button onclick="writeName()">submit</button>
+
   <div class="container">
     <header>
       <h1>Really Awesome Music Site</h1>
@@ -12,10 +18,9 @@
     <section class="player">
 
       <div id="user-input">
-        <form>
-        <input name="name" type="text">
+        <input id="submission" type="text">
         </form>
-        <button onclick="output()">Submit</button>
+        <button onclick="searchTracks()">submit</button>
       </div>
 
       <audio class="music-player" controls="controls" src=""></audio>

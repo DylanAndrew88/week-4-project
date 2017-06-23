@@ -15,11 +15,18 @@
 
 
 // 5. Create a way to listen for a click that will play the song in the audio play
+function writeName() {
+  let welcomeMsg = document.getElementById('welcome');
+  let name = document.getElementById('name');
+
+  welcomeMsg.innerHTML = "Welcome " +name.value;
+}
 
 let container = document.getElementById('user-input');
+let submission = document.getElementById('submission');
 
 function searchTracks() {
-  let string = "Dangerous";
+  let string = submission.value;
   fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=' + string)
   .then(
     function(response) {
@@ -30,15 +37,10 @@ function searchTracks() {
       response.json().then(function(data) {
         console.log(data);
         let markup = `
-
-
           <div id="user-input">
            <p>${data[0].title}</p>
           </div>
-
 `
         container.innerHTML += markup;
 
     })})}
-
-    searchTracks();
