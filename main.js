@@ -37,7 +37,9 @@ function searchTracks() {
           <img src=${data[i].artwork_url}>
            <p>${data[i].title}</p>
            <p>${data[i].user.username}</p>
-           <audio onclick id="music-player" controls="controls" src=${data[i].stream_url}></audio>
+           <p>
+           <audio onclick id="music-player" controls="controls" src="${data[i].stream_url}"></audio>
+           </p>
           </div>
 `
         container.innerHTML += markup;
