@@ -35,13 +35,14 @@ function searchTracks() {
         return
       }
       response.json().then(function(data) {
-        console.log(data);
+        for(i=0; i < data.length; i++) {
         let markup = `
           <div id="user-input">
-           <p>${data[0].title}</p>
-           <p>${data[0].title}</p>
+           <p>${data[i].title}</p>
+           <p>${data[i].user.username}</p>
           </div>
 `
         container.innerHTML += markup;
+      }
 
     })})}
