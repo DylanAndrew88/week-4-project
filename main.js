@@ -15,12 +15,6 @@
 
 
 // 5. Create a way to listen for a click that will play the song in the audio play
-function writeName() {
-  let welcomeMsg = document.getElementById('welcome');
-  let name = document.getElementById('name');
-
-  welcomeMsg.innerHTML = "Welcome " +name.value;
-}
 
 let container = document.getElementById('user-input');
 let submission = document.getElementById('submission');
@@ -38,8 +32,10 @@ function searchTracks() {
         for(i=0; i < data.length; i++) {
         let markup = `
           <div id="user-input">
+          <img src=${data[i].artwork_url}>
            <p>${data[i].title}</p>
            <p>${data[i].user.username}</p>
+           <br>
           </div>
 `
         container.innerHTML += markup;
