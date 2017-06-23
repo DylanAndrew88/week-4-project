@@ -39,6 +39,7 @@ function searchTracks() {
         let markup = `
           <div id="user-input">
            <p>${data[0].title}</p>
+           <p>${data[0].title}</p>
           </div>
 `
         container.innerHTML += markup;
