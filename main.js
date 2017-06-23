@@ -38,7 +38,7 @@ function searchTracks() {
            <p>${data[i].title}</p>
            <p>${data[i].user.username}</p>
            <p>
-           <audio onclick id="music-player" controls="controls" src="${data[i].stream_url}"></audio>
+           <audio onclick id="music-player" controls="controls" src="${data[i].stream_url}/?client_id=8538a1744a7fdaa59981232897501e04&"></audio>
            </p>
           </div>
 `
