@@ -18,6 +18,7 @@
 
 let container = document.getElementById('user-input');
 let submission = document.getElementById('submission');
+let player = document.getElementById('music-player')
 
 function searchTracks() {
   let string = submission.value;
@@ -32,10 +33,11 @@ function searchTracks() {
         for(i=0; i < data.length; i++) {
         let markup = `
           <div id="user-input">
+          <br>
           <img src=${data[i].artwork_url}>
            <p>${data[i].title}</p>
            <p>${data[i].user.username}</p>
-           <br>
+           <audio onclick id="music-player" controls="controls" src=${data[i].stream_url}></audio>
           </div>
 `
         container.innerHTML += markup;
