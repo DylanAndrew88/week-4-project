@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SoundCloud Music Search</title>
+  <title>Jukebox Hero - A Soundcloud Music Player</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Really Awesome Music Site</h1>
+      <h1>Jukebox Hero</h1>
     </header>
     <section class="player">
 
       <div id="user-input">
-        <form>
         <input id="submission" type="text">
-        </form>
         <button onclick="searchTracks()">submit</button>
         <br>
       </div>
@@ -25,7 +24,7 @@
 
       </form>
     </section>
-    <section class="results"></section>
+    <section id="results"></section>
   </div>
   <script src="https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04"></script>
   <script src="main.js"></script>

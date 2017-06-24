@@ -19,6 +19,7 @@
 let container = document.getElementById('user-input');
 let submission = document.getElementById('submission');
 let player = document.getElementById('music-player')
+let results = document.getElementById('results')
 
 function searchTracks() {
   let string = submission.value;
@@ -30,6 +31,7 @@ function searchTracks() {
         return
       }
       response.json().then(function(data) {
+        results.innerHTML = "";
         for(i=0; i < data.length; i++) {
         let markup = `
           <div id="user-input">
@@ -42,7 +44,7 @@ function searchTracks() {
            </p>
           </div>
 `
-        container.innerHTML += markup;
+        results.innerHTML += markup;
       }
 
     })})}
