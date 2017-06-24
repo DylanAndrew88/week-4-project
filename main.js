@@ -18,8 +18,8 @@
 
 let container = document.getElementById('user-input');
 let submission = document.getElementById('submission');
-let player = document.getElementById('music-player')
-let results = document.getElementById('results')
+let player = document.getElementById('music-player');
+let results = document.getElementById('results');
 
 function searchTracks() {
   let string = submission.value;
