@@ -1,4 +1,7 @@
 
+  /*MOBILE MODE*/
+
+
   body {
     background-color: #E3C376;
     text-align: center;
@@ -10,6 +13,8 @@
     display: flex;
     text-align: left;
     padding-bottom: 5%;
+    margin: auto;
+    width: 320px;
   }
 
   .main-title {
@@ -19,14 +24,19 @@
     padding-left: 5%;
     padding-top: 5%;
     text-shadow: center;
-    margin: auto;
   }
 
   .logo {
-    width: 28%;
-    height: 37%;
-    padding-top: 13%;
-    margin-right: 5%;
+    width: 100px;
+    height: 90px;
+    padding-top: 24%;
+    margin-right: 15%;
+  }
+
+  #user-input {
+    width: 350px;
+    padding-top: 5%;
+    margin: auto;
   }
 
   input {
@@ -37,9 +47,9 @@
     margin-right: 3%;
     outline: none;
     font-family: 'Lobster', cursive;
-    font-size: 24px;
+    font-size: 26px;
     color: #553619;
-    width: 50%;
+    width: 40vw;
   }
 
   button {
@@ -50,9 +60,80 @@
     padding-left: 2%;
     padding-right: 2%;
     font-family: 'Lobster', cursive;
-    font-size: 17px;
+    font-size: 14px;
     border: 1.5px #553619 solid;
     border-radius: 10%;
-    margin-top: 30%;
-    outline-color: #982020;
+    margin-top: 5%;
+    outline-color: white;
+    margin-bottom: 15%;
   }
+
+  #results {
+    width: 320px;
+    text-align: left;
+  }
+
+  #results p {
+    width: 320px;
+    font-family: 'Bree Serif', serif;
+    color: #553619;
+    text-shadow: .5px .5px white;
+    padding-left: 2%;
+  }
+
+  .track-art {
+    border-radius: 100%;
+    margin-left: 30%;
+  }
+
+
+  /*TABLET MODE*/
+
+
+  @media screen and (min-width: 545px) {
+
+  .main-title {
+    font-size: 56px;
+  }
+
+  header {
+    display: flex;
+    width: 600px;
+  }
+
+  .logo {
+    padding-top: 8%;
+  }
+
+  input {
+    margin-top: -25%;
+    width: 60vw;
+    margin: auto;
+    font-size: 37px;
+  }
+
+  button {
+    margin: auto;
+    margin-top: 5%;
+    font-size: 18px;
+  }
+
+  #user-input {
+    width: 460px;
+  }
+
+  #placeholder {
+    display: flex;
+    width: 800px;
+  }
+
+  #results {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+
+}

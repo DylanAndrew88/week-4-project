@@ -34,9 +34,9 @@ function searchTracks() {
         results.innerHTML = "";
         for(i=0; i < data.length; i++) {
         let markup = `
-          <div id="user-input">
+          <div id="results">
           <br>
-          <img src=${data[i].artwork_url}>
+          <img class="track-art" src="${data[i].artwork_url}">
            <p>${data[i].title}</p>
            <p>${data[i].user.username}</p>
            <p>
