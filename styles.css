@@ -124,16 +124,13 @@
 
   #placeholder {
     display: flex;
+    flex-wrap: wrap;
     width: 800px;
   }
 
   #results {
     width: 300px;
-    display: flex;
-    flex-wrap: wrap;
   }
-
-
 
 
 }
