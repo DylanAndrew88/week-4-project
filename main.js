@@ -31,20 +31,19 @@ function searchTracks() {
         return
       }
       response.json().then(function(data) {
-        results.innerHTML = "";
+        placeholder.innerHTML = "";
         for(i=0; i < data.length; i++) {
         let markup = `
           <div id="results">
-          <br>
-          <img class="track-art" src="${data[i].artwork_url}">
-           <p>${data[i].title}</p>
-           <p>${data[i].user.username}</p>
-           <p>
-           <audio onclick id="music-player" controls="controls" src="${data[i].stream_url}/?client_id=8538a1744a7fdaa59981232897501e04&"></audio>
-           </p>
+            <img id="track-art" src="${data[i].artwork_url}">
+             <p>${data[i].title}</p>
+             <p id="user-name">${data[i].user.username}</p>
+             <p>
+             <audio id="music-player" controls="controls" src="${data[i].stream_url}/?client_id=8538a1744a7fdaa59981232897501e04&"></audio>
+             </p>
           </div>
 `
-        results.innerHTML += markup;
+      placeholder.innerHTML += markup;
       }
 
     })})}

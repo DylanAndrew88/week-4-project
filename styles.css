@@ -4,7 +4,6 @@
 
   body {
     background-color: #E3C376;
-    text-align: center;
     min-width: 320px;
     min-height: 400px;
   }
@@ -37,6 +36,7 @@
     width: 350px;
     padding-top: 5%;
     margin: auto;
+    text-align: center;
   }
 
   input {
@@ -71,17 +71,20 @@
   #results {
     width: 320px;
     text-align: left;
+    margin-left: 5%;
   }
 
   #results p {
     width: 320px;
-    font-family: 'Bree Serif', serif;
-    color: #553619;
-    text-shadow: .5px .5px white;
+    font-family: 'Poppins', sans-serif;
+    color: #301E00;
+    font-weight: bold;
     padding-left: 2%;
+    margin-top: 5%;
+    font-size: 12px;
   }
 
-  .track-art {
+  #track-art {
     border-radius: 100%;
     margin-left: 30%;
   }
@@ -91,6 +94,7 @@
 
 
   @media screen and (min-width: 545px) {
+
 
   .main-title {
     font-size: 56px;
@@ -109,7 +113,8 @@
     margin-top: -25%;
     width: 60vw;
     margin: auto;
-    font-size: 37px;
+    font-size: 34px;
+    height: 40px;
   }
 
   button {
@@ -119,7 +124,7 @@
   }
 
   #user-input {
-    width: 460px;
+    width: 70vw;
   }
 
   #placeholder {
@@ -129,7 +134,12 @@
   }
 
   #results {
-    width: 300px;
+    margin-top: 10%;
+    width: 320px;
+    height: 250px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
   }
 
 
