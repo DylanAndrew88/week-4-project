@@ -93,32 +93,38 @@
   }
 
   #placeholder {
-    width: 350px;
+    width: 400px;
     margin: auto;
     margin-top: 30px;
   }
 
   #results {
-    width: 350px;
+    width: 380px;
     padding-top: 20px;
     text-align: center;
+    background-color: #553619;
+    border-radius: 5%;
+    border: 3px dotted white;
+    margin: auto;
+    margin-bottom: 20px;
   }
 
   #results p {
     width: 350px;
     font-family: 'Patua One', cursive;
-    color: #6A1111;
+    color: #E3C376;
     font-weight: bold;
     padding-left: 2%;
     margin-top: 10px;
-    font-size: 14px;
-    text-shadow: .5px .5px white;
+    font-size: 16px;
     text-align: left;
   }
 
   #track-art {
     border-radius: 100%;
     margin: auto;
+    border: 3px solid #E3C376;
+    box-shadow: 2px 2px black;
   }
 
 
@@ -172,7 +178,7 @@
   #placeholder {
     display: flex;
     flex-wrap: wrap;
-    width: 720px;
+    width: 740px;
     margin: auto;
   }
 
@@ -181,8 +187,12 @@
     height: 250px;
     float: left;
     margin-top: 20px;
-    margin-bottom: 10px;
     margin: auto;
+    margin-bottom: 20px;
+  }
+
+  #results p {
+    font-size: 12px;
   }
 
 }
@@ -240,21 +250,22 @@
   #placeholder {
     display: flex;
     flex-wrap: wrap;
-    width: 1120px;
+    width: 1170px;
     margin: auto;
   }
 
   #results {
-    width: 320px;
+    width: 350px;
     height: 250px;
     margin-top: 20px;
     margin-bottom: 10px;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
   }
 
   #results p {
     width: 320px;
+    font-size: 14px;
   }
 
 }
