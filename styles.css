@@ -35,9 +35,9 @@
   }
 
   .logo {
-    width: 100px;
-    height: 90px;
-    padding-top: 30px;
+    width: 80px;
+    height: 70px;
+    padding-top: 53px;
     margin: auto;
     margin-right: 15%;
   }
@@ -93,18 +93,19 @@
   }
 
   #placeholder {
-    width: 800px;
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
   }
 
   #results {
-    width: 320px;
-    text-align: left;
-    margin-left: 5%;
+    width: 350px;
     padding-top: 20px;
+    text-align: center;
   }
 
   #results p {
-    width: 400px;
+    width: 350px;
     font-family: 'Patua One', cursive;
     color: #6A1111;
     font-weight: bold;
@@ -112,15 +113,16 @@
     margin-top: 10px;
     font-size: 14px;
     text-shadow: .5px .5px white;
+    text-align: left;
   }
 
   #track-art {
     border-radius: 100%;
-    margin-left: 30%;
+    margin: auto;
   }
 
 
-  /*TABLET MODE*/
+/*TABLET MODE*/
 
 
   @media screen and (min-width: 545px) and (max-width: 768px) {
@@ -136,6 +138,12 @@
     width: 600px;
   }
 
+  .logo {
+    width: 90px;
+    height: 80px;
+    padding-top: 47px;
+  }
+
   .header {
     margin: auto;
   }
@@ -145,40 +153,36 @@
   }
 
   input {
-    float: left;
     margin-top: 18px;
     font-size: 27px;
-    width: 60%;
-    margin-left: 10%;
+    width: 50%;
   }
 
   button {
-    font-size: 18px;
-    margin-right: 10%;
+    font-size: 16px;
     border-width: medium;
   }
 
   #user-input {
     padding-top: 5%;
     width: 90%;
+    margin: auto;
   }
 
   #placeholder {
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    width: 720px;
+    margin: auto;
   }
 
   #results {
-    width: 320px;
+    width: 350px;
     height: 250px;
     float: left;
     margin-top: 20px;
     margin-bottom: 10px;
-  }
-
-  #results p {
-    width: 320px;
+    margin: auto;
   }
 
 }
@@ -191,13 +195,19 @@
 
 
   .main-title {
-    font-size: 56px;
+    font-size: 64px;
     padding-top: 55px;
   }
 
   header {
     display: flex;
-    width: 600px;
+    width: 700px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 90px;
+    padding-top: 47px;
   }
 
   .header {
@@ -205,40 +215,42 @@
   }
 
   .sub-title {
-    font-size: 17px;
+    font-size: 20px;
+    margin-left: 45%;
   }
 
   input {
-    float: left;
-    margin-top: 22px;
-    font-size: 30px;
-    width: 50%;
-    margin-left: 20%;
+    font-size: 34px;
+    width: 40%;
+    margin-top: 73px;
   }
 
   button {
     font-size: 18px;
-    margin-right: 10%;
     border-width: medium;
+    margin-bottom: 5px;
   }
 
   #user-input {
-    padding-top: 5%;
     width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
   }
 
   #placeholder {
     display: flex;
     flex-wrap: wrap;
-    width: 1130px;
+    width: 1120px;
+    margin: auto;
   }
 
   #results {
     width: 320px;
     height: 250px;
-    float: left;
     margin-top: 20px;
     margin-bottom: 10px;
+    margin-right: 2%;
+    margin-left: 2%;
   }
 
   #results p {
