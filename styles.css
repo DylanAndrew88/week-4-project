@@ -11,9 +11,16 @@
   header {
     display: flex;
     text-align: left;
-    padding-bottom: 5%;
     margin: auto;
     width: 320px;
+  }
+
+  .container {
+    margin: auto;
+  }
+
+  .header {
+    margin: auto;
   }
 
   .main-title {
@@ -21,21 +28,38 @@
     color: #982020;
     font-size: 48px;
     padding-left: 5%;
-    padding-top: 5%;
-    text-shadow: center;
+    padding-top: 10px;
+    text-shadow: 1px 1px black;
+    margin: auto;
+    margin-left: 5%;
   }
 
   .logo {
     width: 100px;
     height: 90px;
-    padding-top: 24%;
+    padding-top: 30px;
+    margin: auto;
     margin-right: 15%;
   }
 
-  #user-input {
-    width: 350px;
-    padding-top: 5%;
+  .sub-title {
+    font-size: 14px;
+    font-family: 'Lobster', cursive;
+    color: #DB5825;
+    text-shadow: .5px .5px #4A4949;
+    width: 270px;
+    text-align: center;
     margin: auto;
+  }
+
+  .sub-header {
+    margin: auto;
+  }
+
+  #user-input {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
     text-align: center;
   }
 
@@ -44,12 +68,11 @@
     background-color: #E3C376;
     border: none;
     border-bottom: 5px dotted white;
-    margin-right: 3%;
     outline: none;
     font-family: 'Lobster', cursive;
-    font-size: 26px;
+    font-size: 22px;
     color: #553619;
-    width: 40vw;
+    width: 80%;
   }
 
   button {
@@ -63,25 +86,32 @@
     font-size: 14px;
     border: 1.5px #553619 solid;
     border-radius: 10%;
-    margin-top: 5%;
+    margin-top: 20px;
     outline-color: white;
-    margin-bottom: 15%;
+    margin-bottom: 12%;
+    margin-left: 2%;
+  }
+
+  #placeholder {
+    width: 800px;
   }
 
   #results {
     width: 320px;
     text-align: left;
     margin-left: 5%;
+    padding-top: 20px;
   }
 
   #results p {
-    width: 320px;
-    font-family: 'Poppins', sans-serif;
-    color: #301E00;
+    width: 400px;
+    font-family: 'Patua One', cursive;
+    color: #6A1111;
     font-weight: bold;
     padding-left: 2%;
-    margin-top: 5%;
-    font-size: 12px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-shadow: .5px .5px white;
   }
 
   #track-art {
@@ -93,11 +123,12 @@
   /*TABLET MODE*/
 
 
-  @media screen and (min-width: 545px) {
+  @media screen and (min-width: 545px) and (max-width: 768px) {
 
 
   .main-title {
     font-size: 56px;
+    padding-top: 55px;
   }
 
   header {
@@ -105,26 +136,30 @@
     width: 600px;
   }
 
-  .logo {
-    padding-top: 8%;
+  .header {
+    margin: auto;
+  }
+
+  .sub-title {
+    font-size: 17px;
   }
 
   input {
-    margin-top: -25%;
-    width: 60vw;
-    margin: auto;
-    font-size: 34px;
-    height: 40px;
+    float: left;
+    margin-top: 18px;
+    font-size: 27px;
+    width: 70%;
+    margin-left: 10%;
   }
 
   button {
-    margin: auto;
-    margin-top: 5%;
     font-size: 18px;
+    margin-left: 0%;
   }
 
   #user-input {
-    width: 70vw;
+    padding-top: 5%;
+    width: 90%;
   }
 
   #placeholder {
@@ -134,13 +169,78 @@
   }
 
   #results {
-    margin-top: 10%;
     width: 320px;
     height: 250px;
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
+  #results p {
+    width: 320px;
+  }
+
+}
+
+
+/*DESKTOP MODE*/
+
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+
+  .main-title {
+    font-size: 56px;
+    padding-top: 55px;
+  }
+
+  header {
+    display: flex;
+    width: 600px;
+  }
+
+  .header {
+    margin: auto;
+  }
+
+  .sub-title {
+    font-size: 17px;
+  }
+
+  input {
+    float: left;
+    margin-top: 23px;
+    font-size: 27px;
+    width: 70%;
+    margin-left: 10%;
+  }
+
+  button {
+    font-size: 18px;
+    margin-left: 0%;
+  }
+
+  #user-input {
+    padding-top: 5%;
+    width: 90%;
+  }
+
+  #placeholder {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #results {
+    width: 320px;
+    height: 250px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  #results p {
+    width: 320px;
+  }
 
 }

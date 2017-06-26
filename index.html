@@ -5,28 +5,26 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1 class="main-title">Jukebox Hero</h1>
-      <img class="logo" src="Jukebox-Logo.png">
-    </header>
+    <div class=header>
+      <header>
+        <h1 class="main-title">Jukebox Hero</h1>
+        <img class="logo" src="Jukebox-Logo.png">
+      </header>
+      <section class="sub-header">
+        <h2 class="sub-title">A music player powered by SoundCloud</h2>
+      </section>
+    </div>
+  </div>
 
-    <section class="player">
+    <div id="user-input">
+      <input id="submission" type="text">
+      <button onclick="searchTracks()">Rock On</button>
+    </div>
 
-      <div id="user-input">
-        <input id="submission" type="text">
-        <button onclick="searchTracks()">Rock On</button>
-        <br>
-      </div>
-
-    </section>
-    <section class="search">
-      <form class="search-form">
-
-      </form>
     </section>
     <div id="placeholder">
     </div>
