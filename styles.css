@@ -148,13 +148,14 @@
     float: left;
     margin-top: 18px;
     font-size: 27px;
-    width: 70%;
+    width: 60%;
     margin-left: 10%;
   }
 
   button {
     font-size: 18px;
-    margin-left: 0%;
+    margin-right: 10%;
+    border-width: medium;
   }
 
   #user-input {
@@ -186,7 +187,7 @@
 /*DESKTOP MODE*/
 
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+  @media screen and (min-width: 769px) {
 
 
   .main-title {
@@ -209,15 +210,16 @@
 
   input {
     float: left;
-    margin-top: 23px;
-    font-size: 27px;
-    width: 70%;
-    margin-left: 10%;
+    margin-top: 22px;
+    font-size: 30px;
+    width: 50%;
+    margin-left: 20%;
   }
 
   button {
     font-size: 18px;
-    margin-left: 0%;
+    margin-right: 10%;
+    border-width: medium;
   }
 
   #user-input {
@@ -226,9 +228,9 @@
   }
 
   #placeholder {
-    width: 1200px;
     display: flex;
     flex-wrap: wrap;
+    width: 1130px;
   }
 
   #results {
