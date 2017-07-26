@@ -1,7 +1,6 @@
 
   /*MOBILE MODE*/
 
-
   body {
     background-color: #E3C376;
     min-width: 320px;
@@ -29,7 +28,7 @@
     font-size: 48px;
     padding-left: 5%;
     padding-top: 10px;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px black;
     margin: auto;
     margin-left: 5%;
   }
@@ -105,7 +104,7 @@
     background-image: url('leather-background.jpg');
     background-size: cover;
     border-radius: 5%;
-    border: 3px dotted white;
+    border: 4px dotted #D8AE0E;
     margin: auto;
     margin-bottom: 20px;
   }
@@ -119,17 +118,19 @@
     margin-top: 10px;
     font-size: 16px;
     text-align: left;
+    text-shadow: 2px 2px black;
   }
 
   #track-art {
     border-radius: 100%;
     margin: auto;
-    border: 3px solid #E3C376;
+    border: 3px solid #D8AE0E;
     box-shadow: 2px 2px black;
+    width: 80px;
   }
 
 
-/*TABLET MODE*/
+  /*TABLET MODE*/
 
 
   @media screen and (min-width: 545px) and (max-width: 768px) {
@@ -196,10 +197,10 @@
     font-size: 12px;
   }
 
-}
+  }
 
 
-/*DESKTOP MODE*/
+  /*DESKTOP MODE*/
 
 
   @media screen and (min-width: 769px) {
@@ -269,4 +270,4 @@
     font-size: 14px;
   }
 
-}
+  }
