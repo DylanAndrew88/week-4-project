@@ -3,8 +3,6 @@
 
   body {
     background-color: #E3C376;
-    min-width: 320px;
-    min-height: 400px;
   }
 
   header {
@@ -79,8 +77,8 @@
     color: white;
     padding-top: 1%;
     padding-bottom: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
     font-family: 'Lobster', cursive;
     font-size: 14px;
     border: 1.5px #553619 solid;
@@ -89,36 +87,58 @@
     outline-color: white;
     margin-bottom: 12%;
     margin-left: 2%;
+    cursor: pointer;
+  }
+
+  button:hover {
+    font-size: 20px;
   }
 
   #placeholder {
-    width: 400px;
-    margin: auto;
-    margin-top: 30px;
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
   }
 
   #results {
-    width: 380px;
+    width: 24vw;
     padding-top: 20px;
     text-align: center;
     background-image: url('leather-background.jpg');
     background-size: cover;
     border-radius: 5%;
-    border: 4px dotted #D8AE0E;
+    border: 6px dotted #D8AE0E;
     margin: auto;
     margin-bottom: 20px;
   }
 
   #results p {
-    width: 350px;
-    font-family: 'Patua One', cursive;
-    color: #E3C376;
+    display: block;
+    width: 340px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Poppins', cursive;
+    color: #E6E6E6;
     font-weight: bold;
     padding-left: 2%;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
     text-shadow: 2px 2px black;
+  }
+
+  .title {
+    padding-left: 20px;
+    width: 1000px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .userName {
+    padding-left: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   #track-art {
@@ -127,84 +147,8 @@
     border: 3px solid #D8AE0E;
     box-shadow: 2px 2px black;
     width: 80px;
+    margin-bottom: 10px;
   }
-
-
-  /*TABLET MODE*/
-
-
-  @media screen and (min-width: 545px) and (max-width: 768px) {
-
-
-  .main-title {
-    font-size: 56px;
-    padding-top: 55px;
-  }
-
-  header {
-    display: flex;
-    width: 600px;
-  }
-
-  .logo {
-    width: 90px;
-    height: 80px;
-    padding-top: 47px;
-  }
-
-  .header {
-    margin: auto;
-  }
-
-  .sub-title {
-    font-size: 17px;
-  }
-
-  input {
-    margin-top: 18px;
-    font-size: 27px;
-    width: 50%;
-  }
-
-  button {
-    font-size: 16px;
-    border-width: medium;
-  }
-
-  #user-input {
-    padding-top: 5%;
-    width: 90%;
-    margin: auto;
-  }
-
-  #placeholder {
-    display: flex;
-    flex-wrap: wrap;
-    width: 740px;
-    margin: auto;
-  }
-
-  #results {
-    width: 350px;
-    height: 250px;
-    float: left;
-    margin-top: 20px;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-
-  #results p {
-    font-size: 12px;
-  }
-
-  }
-
-
-  /*DESKTOP MODE*/
-
-
-  @media screen and (min-width: 769px) {
-
 
   .main-title {
     font-size: 64px;
@@ -252,22 +196,36 @@
   #placeholder {
     display: flex;
     flex-wrap: wrap;
-    width: 1170px;
+    width: 95vw;
     margin: auto;
   }
 
   #results {
-    width: 350px;
+    width: 28vw;
     height: 250px;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     margin-right: 1%;
     margin-left: 1%;
   }
 
   #results p {
-    width: 320px;
-    font-size: 14px;
+    width: 24vw;
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 20px;
   }
 
+  .title {
+    padding-left: 20px;
+  }
+
+  .userName {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  #music-player {
+    width: 26vw;
   }

@@ -22,10 +22,9 @@
           let markup = `
             <div id="results">
               <img id="track-art" src="${data[i].artwork_url}">
-               <p>${data[i].title}</p>
-               <p id="user-name">${data[i].user.username}</p>
+               <p class="title">${data[i].title}</p>
+               <p class="userName">${data[i].user.username}</p>
                <p>
-               <br>
                <audio id="music-player" controls="controls" src="${data[i].stream_url}/?client_id=8538a1744a7fdaa59981232897501e04&"></audio>
                </p>
             </div>
