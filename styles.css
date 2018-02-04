@@ -7,6 +7,8 @@
 
   .container {
     margin: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
   }
 
   .main-title {
@@ -32,7 +34,7 @@
     text-align: center;
     background-color: #E3C376;
     border: none;
-    border-bottom: 5px dotted white;
+    border-bottom: 5px dashed white;
     outline: none;
     font-family: 'Lobster', cursive;
     font-size: 22px;
@@ -52,7 +54,7 @@
     border: 1.5px #553619 solid;
     border-radius: 10%;
     margin-top: 20px;
-    outline-color: white;
+    outline: none;
     margin-bottom: 12%;
     margin-left: 2%;
     cursor: pointer;
@@ -70,20 +72,16 @@
   }
 
   #results {
-    width: 24vw;
+    width: 20vw;
     padding-top: 20px;
     text-align: center;
     background-image: url('leather-background.jpg');
     background-size: cover;
     border-radius: 5%;
-    border: 6px dotted #D8AE0E;
+    border: 4px dashed #D8AE0E;
     margin: auto;
     margin-bottom: 20px;
-  }
-
-  #results {
     cursor: pointer;
-    width: 28vw;
   }
 
   #results p {
@@ -106,12 +104,14 @@
     width: 1000px;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: -10px;
   }
 
   .userName {
     padding-left: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: -60px;
   }
 
   #track-art {
@@ -223,6 +223,10 @@
     margin-right: 110px;
   }
 
+  #placeholder {
+    width: 85vw;
+  }
+
   }
 
   @media screen and (min-width: 995px) and (max-width: 1160px) {
@@ -233,7 +237,7 @@
   }
 
   #results {
-    width: 35vw;
+    width: 30vw;
   }
 
   }
