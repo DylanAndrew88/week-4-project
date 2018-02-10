@@ -7,6 +7,9 @@
   function searchTracks() {
     document.getElementsByClassName('container')[0].style.marginTop = "0px";
     document.getElementsByClassName('container')[0].style.marginBottom = "-20px";
+    document.getElementsByClassName('sub-title')[0].style.marginBottom = "-100px";
+    document.getElementById('submission').style.display = "inline";
+    document.getElementById('submission').style.width = "35vw";
     let string = submission.value;
     fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=' + string)
     .then(
