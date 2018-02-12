@@ -1,6 +1,4 @@
 
-  /*MOBILE MODE*/
-
   body {
     background-color: #E3C376;
   }
@@ -63,7 +61,6 @@
     margin-top: 20px;
     outline: none;
     margin-bottom: 12%;
-    margin-left: 2%;
     cursor: pointer;
   }
 
@@ -199,11 +196,11 @@
     text-shadow: 2px 2px black;
   }
 
-  .title {
+  #title {
     padding-left: 20px;
   }
 
-  .userName {
+  #userName {
     margin-bottom: 20px;
     padding-left: 20px;
   }
