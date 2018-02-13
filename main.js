@@ -33,18 +33,18 @@
               <p>
               <audio id="music-player" controls="controls" src="${data[i].stream_url}/?client_id=8538a1744a7fdaa59981232897501e04&"></audio>
               </p>
+              <p id="trackid">${data[i].id}</p>
             </div>
         `
         placeholder.innerHTML += markup;
         }
-        let id = data[0].id;
-        console.log(id);
 
       })})};
 
   function soloTrack() {
-    // console.log(document.getElementById('title'));
-    fetch('https://api.soundcloud.com/tracks/' + '253908773' + '?client_id=8538a1744a7fdaa59981232897501e04')
+    let id = document.getElementById('trackid').innerHTML;
+    console.log(id)
+    fetch('https://api.soundcloud.com/tracks/' + id + '?client_id=8538a1744a7fdaa59981232897501e04')
     .then(
       function(response) {
         if(response.status !== 200) {
@@ -52,7 +52,6 @@
           return
         }
         response.json().then(function(data) {
-          console.log(data.title);
           placeholder.innerHTML = "";
           let markup = `
             <div id="results">
