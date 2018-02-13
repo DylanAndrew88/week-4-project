@@ -27,7 +27,7 @@
           }
           let markup = `
             <div id="results">
-              <a onclick="soloTrack"><img id="track-art" src="${data[i].artwork_url}"></a>
+              <a onclick="soloTrack()"><img id="track-art" src="${data[i].artwork_url}"></a>
               <p id="title">${data[i].title}</p>
               <p id="userName">${data[i].user.username}</p>
               <p>
@@ -37,36 +37,29 @@
         `
         placeholder.innerHTML += markup;
         }
-        console.log(document.getElementById('title'));
+        let id = data[0].id;
+        console.log(id);
 
       })})};
 
   function soloTrack() {
-    console.log(document.getElementById('title'));
-    // fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=')
-    // .then(
-    //   function(response) {
-    //     if(response.status !== 200) {
-    //       console.log('Looks like there was a problem. Status Code: ' + response.status);
-    //       return
-    //     }
-    //     response.json().then(function(data) {
-    //       placeholder.innerHTML = "";
-    //       if (data[i].artwork_url == null) {
-    //          data[i].artwork_url = "record_placeholder.png";
-    //       }
-    //       let markup = `
-    //         <div id="results">
-    //           <a href="single.html" onclick>="soloTrack"<img id="track-art" src="${data[i].artwork_url}"></a>
-    //           <p class="title">${data[i].title}</p>
-    //           <p class="userName">${data[i].user.username}</p>
-    //           <p>
-    //           <audio id="music-player" controls="controls" src="${data[i].stream_url}/?client_id=8538a1744a7fdaa59981232897501e04&"></audio>
-    //           </p>
-    //         </div>
-    //     `
-    //     console.log(data[i].id);
-    //     placeholder.innerHTML += markup;
-    //
-    //   })})
-    };
+    // console.log(document.getElementById('title'));
+    fetch('https://api.soundcloud.com/tracks/' + '253908773' + '?client_id=8538a1744a7fdaa59981232897501e04')
+    .then(
+      function(response) {
+        if(response.status !== 200) {
+          console.log('Looks like there was a problem. Status Code: ' + response.status);
+          return
+        }
+        response.json().then(function(data) {
+          console.log(data.title);
+          placeholder.innerHTML = "";
+          let markup = `
+            <div id="results">
+              <p class="title">${data.title}</p>
+              <p class="userName">${data.user.username}</p>
+            </div>
+        `
+        placeholder.innerHTML += markup;
+
+      })})};
