@@ -27,8 +27,8 @@
           }
           let markup = `
             <div id="results">
-              <a onclick="soloTrack()"><img id="track-art" src="${data[i].artwork_url}"></a>
-              <p id="title">${data[i].title}</p>
+              <img id="track-art" src="${data[i].artwork_url}">
+              <a onclick="soloTrack()"><p id="title">${data[i].title}</p></a>
               <p id="userName">${data[i].user.username}</p>
               <p>
               <audio id="music-player" controls="controls" src="${data[i].stream_url}/?client_id=8538a1744a7fdaa59981232897501e04&"></audio>
@@ -43,7 +43,7 @@
 
   function soloTrack() {
     let id = document.getElementById('trackid').innerHTML;
-    console.log(id)
+    console.log(event.target.innerHTML);
     fetch('https://api.soundcloud.com/tracks/' + id + '?client_id=8538a1744a7fdaa59981232897501e04')
     .then(
       function(response) {
