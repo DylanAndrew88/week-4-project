@@ -43,7 +43,6 @@
 
   function soloTrack() {
     let id = document.getElementById('trackid').innerHTML;
-    console.log(event.target.innerHTML);
     fetch('https://api.soundcloud.com/tracks/' + id + '?client_id=8538a1744a7fdaa59981232897501e04')
     .then(
       function(response) {
