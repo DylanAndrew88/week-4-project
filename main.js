@@ -33,16 +33,22 @@
               <p>
               <audio id="music-player" controls="controls" src="${data[i].stream_url}/?client_id=8538a1744a7fdaa59981232897501e04&"></audio>
               </p>
-              <p id="trackid">${data[i].id}</p>
+              <p id="trackid">${i}</p>
             </div>
         `
         placeholder.innerHTML += markup;
         }
 
+        let id = data.map(function(x){
+          return x.id
+        });
+        console.log(id);
+
       })})};
 
   function soloTrack() {
     let id = document.getElementById('trackid').innerHTML;
+    console.log(id);
     fetch('https://api.soundcloud.com/tracks/' + id + '?client_id=8538a1744a7fdaa59981232897501e04')
     .then(
       function(response) {
