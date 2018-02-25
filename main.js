@@ -11,6 +11,7 @@
     document.getElementById('submission').style.display = "inline";
     document.getElementById('submission').style.width = "35vw";
     document.getElementById('submission').style.marginRight = "2vw";
+    document.getElementById('placeholder').style.marginTop = "20px";
     let string = submission.value;
     fetch('https://api.soundcloud.com/tracks?client_id=8538a1744a7fdaa59981232897501e04&q=' + string)
     .then(
@@ -28,21 +29,16 @@
           let markup = `
             <div id="results">
               <img id="track-art" src="${data[i].artwork_url}">
-              <a onclick="soloTrack()"><p id="title">${data[i].title}</p></a>
+              <p id="title">${data[i].title}</p>
               <p id="userName">${data[i].user.username}</p>
               <p>
               <audio id="music-player" controls="controls" src="${data[i].stream_url}/?client_id=8538a1744a7fdaa59981232897501e04&"></audio>
               </p>
-              <p id="trackid">${i}</p>
+              <p id="trackid">${data[i].user.id}</p>
             </div>
         `
         placeholder.innerHTML += markup;
         }
-
-        let id = data.map(function(x){
-          return x.id
-        });
-        console.log(id);
 
       })})};
 

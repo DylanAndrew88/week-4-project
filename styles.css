@@ -133,7 +133,7 @@
   }
 
   #submission {
-    width: 50vw;
+    width: 40vw;
     font-size: 34px;
     margin-top: 73px;
     display: block;
@@ -144,7 +144,7 @@
     font-size: 18px;
     border-width: medium;
     margin-bottom: 5px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   #user-input {
